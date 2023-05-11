@@ -6,7 +6,7 @@ import time
 wb = xl.load_workbook('C:\\Users\\gabur\\OneDrive\\Desktop\\Concat.xlsx')
 ws = wb['Saldo Estoque']
 
-'''
+
 # Abre o SLD
 
 pg.alert('Cuidado, Não mexer no computador')
@@ -26,7 +26,7 @@ pg.click()
 time.sleep(75)
 pg.moveTo(1275, 239)
 pg.click()
-'''
+
 pg.PAUSE = 0.3
 pg.moveTo(15, 108)
 pg.click()
@@ -52,12 +52,12 @@ for row in range(2, 4):
 
 pg.hotkey('alt', 'tab')
 
-'''
+
 for row in range(6, 100):
     if ws['F' + str(row)].value == "B":
         print(ws['G' + str(row)].value)
     if ws['A' + str(row)].value == None:
         break
-'''
+
 
 wb.save('C:\\Users\\gabur\\OneDrive\\Desktop\\Concat.xlsx')
